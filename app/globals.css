@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+    --primary_color: black;
+    --secondery_color: red;
+    --text_color: white;
+}
+
+body {
+    scroll-behavior: no-scroll;
+    background-color: var(--primary_color);
+    color: white;
+}
+
+.terminal-container {
+    position: absolute;
+    top: 25vh;
+    left: 30vw;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    color: var(--secondery_color);
+}
+
+.terminal-window {
+    width: 100%;
+    max-width: 700px;
+}
+
+.back_to_home {
+    font-size: large;
+    color: var(--secondery_color);
+    text-decoration: underline;
+}
