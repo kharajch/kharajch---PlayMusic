@@ -1,14 +1,13 @@
 "use client"
 import "@/components/css/playbar.css"
-import { useEffect } from "react"
 
 const Playbar = () => {
 
 const PauseMusic = () => {
 
 const audios = document.querySelectorAll('audio');
-const playingAudio = Array.from(audios).find(audio => !audio.paused && !audio.ended && audio.currentTime > 0);
-const pausedAudio = Array.from(audios).find(audio => audio.paused);
+const playingAudio = Array.from(audios).find(audios => !audios.paused && !audios.ended && audios.currentTime > 0);
+const pausedAudio = Array.from(audios).find(audios => audios.paused);
 
 playingAudio && playingAudio.pause();
 pausedAudio && pausedAudio.play();

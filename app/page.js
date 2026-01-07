@@ -1,12 +1,10 @@
-import Content from "@/components/Content";
-import Playbar from "@/components/Playbar";
+import Content from "@/components/HomeContent";
 
 
 export default function Home() {
   return (
     <>
     <Content/>
-    <Playbar/>
     </>
   );
 }

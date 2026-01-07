@@ -1,7 +1,7 @@
 
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState} from "react"
 const Card = (props) => {
   const [Play, setPlay] = useState(false)
 
@@ -16,7 +16,7 @@ const Card = (props) => {
   }
 
   return (
-    <div className="projects_card">
+    <div className="projects_card" lang={props.lang} nme={props.name} singer={props.singer} genre={props.genre}>
       <img src={`/music/img/${props.img}`} alt={props.name} />
       <br />
       <h3>{props.singer}</h3>
