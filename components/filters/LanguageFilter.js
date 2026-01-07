@@ -1,68 +1,63 @@
+var LangNames = ["Bengali", "Hindi", "English"]
+var LangVars = ["Bengali", "Hindi", "English"]
+
 export function LangFilter(e) {
-  var bengali = document.querySelectorAll('[lang="Bengali"]');
-  var hindi = document.querySelectorAll('[lang="Hindi"]');
-  var english = document.querySelectorAll('[lang="English"]');
+  for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i] = document.querySelectorAll(`[lang='${LangNames[i]}']`)
+    }
 
-  bengali.forEach(e => {
-    e.style.display = "inline-block"
-  })
-  hindi.forEach(e => {
-    e.style.display = "inline-block"
-  })
-  english.forEach(e => {
-    e.style.display = "inline-block"
-  })
+    for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i].forEach(e => {
+            e.style.display = "inline-block"
 
-
+        })
+    }
 }
 
 export function LangFilterBeng(e) {
-  var bengali = document.querySelectorAll('[lang="Bengali"]');
-  var hindi = document.querySelectorAll('[lang="Hindi"]');
-  var english = document.querySelectorAll('[lang="English"]');
+   for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i] = document.querySelectorAll(`[lang='${LangNames[i]}']`)
+    }
 
-  bengali.forEach(e => {
-    e.style.display = "inline-block"
-  })
-  hindi.forEach(e => {
-    e.style.display = "none"
-  })
-  english.forEach(e => {
-    e.style.display = "none"
-  })
+    for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i].forEach(e => {
+            e.style.display = "none"
 
+        })
+    }
+    LangVars[0].forEach(e =>{
+      e.style.display = "inline-block"
+    })
 
 }
 export function LangFilterHind(e) {
-  var bengali = document.querySelectorAll('[lang="Bengali"]');
-  var hindi = document.querySelectorAll('[lang="Hindi"]');
-  var english = document.querySelectorAll('[lang="English"]');
+  for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i] = document.querySelectorAll(`[lang='${LangNames[i]}']`)
+    }
 
-  hindi.forEach(e => {
-    e.style.display = "inline-block"
-  })
-  bengali.forEach(e => {
-    e.style.display = "none"
-  })
-  english.forEach(e => {
-    e.style.display = "none"
-  })
+    for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i].forEach(e => {
+            e.style.display = "none"
 
-
+        })
+    }
+    LangVars[1].forEach(e =>{
+      e.style.display = "inline-block"
+    })
 }
 export function LangFilterEng(e) {
-  var bengali = document.querySelectorAll('[lang="Bengali"]');
-  var hindi = document.querySelectorAll('[lang="Hindi"]');
-  var english = document.querySelectorAll('[lang="English"]');
+  for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i] = document.querySelectorAll(`[lang='${LangNames[i]}']`)
+    }
 
-  english.forEach(e => {
-    e.style.display = "inline-block"
-  })
-  hindi.forEach(e => {
-    e.style.display = "none"
-  })
-  bengali.forEach(e => {
-    e.style.display = "none"
-  })
+    for (let i = 0; i <= LangNames.length; i++) {
+        LangVars[i].forEach(e => {
+            e.style.display = "none"
+
+        })
+    }
+    LangVars[2].forEach(e =>{
+      e.style.display = "inline-block"
+    })
 
 }

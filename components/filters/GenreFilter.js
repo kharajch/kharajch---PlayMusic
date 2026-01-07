@@ -1,68 +1,63 @@
+var GenreNames = ["Sad", "Romantic", "Energetic"]
+var GenreVars = ["Sad", "Romantic", "Energetic"]
+
 export function GenreFilter(e) {
-    var sad = document.querySelectorAll('[genre="Sad"]');
-    var romantic = document.querySelectorAll('[genre="Romantic"]');
-    var energetic = document.querySelectorAll('[genre="Energetic"]');
+  for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i] = document.querySelectorAll(`[genre='${GenreNames[i]}']`)
+    }
 
-    sad.forEach(e => {
-        e.style.display = "inline-block"
-    })
-    romantic.forEach(e => {
-        e.style.display = "inline-block"
-    })
-    energetic.forEach(e => {
-        e.style.display = "inline-block"
-    })
+    for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i].forEach(e => {
+            e.style.display = "inline-block"
 
+        })
+    }
+}
+
+export function GenreFilterSad(e) {
+   for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i] = document.querySelectorAll(`[Genre='${GenreNames[i]}']`)
+    }
+
+    for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i].forEach(e => {
+            e.style.display = "none"
+
+        })
+    }
+    GenreVars[0].forEach(e =>{
+      e.style.display = "inline-block"
+    })
 
 }
 export function GenreFilterRomantic(e) {
-    var sad = document.querySelectorAll('[genre="Sad"]');
-    var romantic = document.querySelectorAll('[genre="Romantic"]');
-    var energetic = document.querySelectorAll('[genre="Energetic"]');
+  for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i] = document.querySelectorAll(`[Genre='${GenreNames[i]}']`)
+    }
 
-    romantic.forEach(e => {
-        e.style.display = "inline-block"
-    })
-    sad.forEach(e => {
-        e.style.display = "none"
-    })
-    energetic.forEach(e => {
-        e.style.display = "none"
-    })
+    for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i].forEach(e => {
+            e.style.display = "none"
 
-
+        })
+    }
+    GenreVars[1].forEach(e =>{
+      e.style.display = "inline-block"
+    })
 }
 export function GenreFilterEnergetic(e) {
-    var sad = document.querySelectorAll('[genre="Sad"]');
-    var romantic = document.querySelectorAll('[genre="Romantic"]');
-    var energetic = document.querySelectorAll('[genre="Energetic"]');
+  for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i] = document.querySelectorAll(`[Genre='${GenreNames[i]}']`)
+    }
 
-    energetic.forEach(e => {
-        e.style.display = "inline-block"
-    })
-    sad.forEach(e => {
-        e.style.display = "none"
-    })
-    romantic.forEach(e => {
-        e.style.display = "none"
-    })
+    for (let i = 0; i <= GenreNames.length; i++) {
+        GenreVars[i].forEach(e => {
+            e.style.display = "none"
 
-
-}
-export function GenreFilterSad(e) {
-    var sad = document.querySelectorAll('[genre="Sad"]');
-    var romantic = document.querySelectorAll('[genre="Romantic"]');
-    var energetic = document.querySelectorAll('[genre="Energetic"]');
-
-    sad.forEach(e => {
-        e.style.display = "inline-block"
+        })
+    }
+    GenreVars[2].forEach(e =>{
+      e.style.display = "inline-block"
     })
-    energetic.forEach(e => {
-        e.style.display = "none"
-    })
-    romantic.forEach(e => {
-        e.style.display = "none"
-    })
-
 
 }

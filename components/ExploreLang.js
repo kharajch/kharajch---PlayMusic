@@ -3,13 +3,12 @@ import "@/components/css/homecontent.css"
 import Card from "./components/Card"
 import { music } from "./components/music-data"
 import { LangFilter, LangFilterBeng, LangFilterEng, LangFilterHind } from "./filters/LanguageFilter"
-import { GenreFilter, GenreFilterRomantic, GenreFilterEnergetic, GenreFilterSad } from "./filters/GenreFilter"
 import { useState } from "react"
 
 const ExploreLang = () => {
   const items = [];
   for (let i = 0; i < music.length; i++) {
-    items.push(<Card img={music[i].img} singer={music[i].singer} name={music[i].name} lang={music[i].lang} genre={music[i].genre} key={i} />)
+    items.push(<Card img={music[i].img} singer={music[i].singer} name={music[i].name} lang={music[i].lang} genre={music[i].genre} index={i} key={i} />)
   }
   const [searchval, setsearchval] = useState("")
   async function SearchFilter(e) {

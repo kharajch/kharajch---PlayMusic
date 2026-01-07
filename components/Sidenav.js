@@ -11,7 +11,6 @@ const Sidenav = () => {
             <Link className={"nav-link"} href={"/Explore"}><button className="nav-link-btn">Explore</button></Link>
           </ul>
         </div>
-        <button className="nav-btn">+ New Playlist</button>
     </div>
     </div>
   )
