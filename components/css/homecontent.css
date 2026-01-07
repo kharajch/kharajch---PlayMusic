@@ -19,39 +19,6 @@
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.profile-pic {
-    border: 5px solid var(--secondery_color);
-    border-radius: 50%;
-    width: 100px;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    cursor: pointer;
-}
-
-.username {
-    position: absolute;
-    top: 120px;
-    right: 45px;
-    font-size: large;
-}
-
-.username:hover {
-    cursor: pointer;
-    color: var(--secondery_color);
-    transition-property: color;
-    transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.profile-pic:hover {
-    cursor: pointer;
-    box-shadow: 5px 5px 30px var(--secondery_color);
-    transition-property: box-shadow;
-    transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
 /* Bubbles */
 
 .buuble-container {

@@ -2,8 +2,9 @@
 import "@/components/css/homecontent.css"
 import Card from "./components/Card"
 import { music } from "./components/music-data"
-import { LangFilter} from "./filters/LanguageFilter"
-import { GenreFilter} from "./filters/GenreFilter"
+import { LangFilter, LangFilterBeng, LangFilterEng, LangFilterHind } from "./filters/LanguageFilter"
+import { GenreFilter, GenreFilterRomantic, GenreFilterEnergetic, GenreFilterSad } from "./filters/GenreFilter"
+import { SingerFilter, SingerFilterArijitSingh, SingerFilterShreyaGhoshal, SingerFilterRajBarman, SingerFilterSalmanMuqtadir, SingerFilterMohitChauhan, SingerFilterAnkan, SingerFilterAfrin } from "./filters/SingerFilter"
 import { useState } from "react"
 
 const Content = () => {
@@ -19,7 +20,7 @@ const Content = () => {
     if (e.target.value != "") {
       searchresults = document.querySelectorAll(`[name*=${e.target.value}]`);
     }
-    else{
+    else {
       searchresults = document.querySelectorAll(`[name*=""]`);
     }
 
@@ -33,7 +34,7 @@ const Content = () => {
         e.style.display = "inline-block"
       })
     }
-    else{
+    else {
       await allcards.forEach(el => {
         el.style.display = "inline-block"
       })
@@ -45,11 +46,15 @@ const Content = () => {
     <div className="content-container">
       <div className="content-header">
         <input type="text" className="searchbar" placeholder={"🔍 Search Songs"} value={searchval} onChange={SearchFilter} />
-       <a href="https://github.com/kharajch"> <img src="/profile-pic/kharaj.jpg" className="profile-pic" /></a>
-       <h2 className="username"><a href="https://github.com/kharajch">kharajch</a></h2>
       </div>
       <div className="buuble-container">
-        <button className="bubble" onClick={()=>{LangFilter(); GenreFilter()}}>All</button>
+        <button className="bubble" onClick={() => { LangFilter(); GenreFilter(); SingerFilter(); }}>All</button>
+        <button className="bubble" onClick={SingerFilterArijitSingh}>Arijit Singh</button>
+        <button className="bubble" onClick={GenreFilterEnergetic}>Energetic</button>
+        <button className="bubble" onClick={LangFilterBeng}>Bengali</button>
+        <button className="bubble" onClick={GenreFilterRomantic}>Romantic</button>
+        <button className="bubble" onClick={SingerFilterShreyaGhoshal}>Shreya Ghoshal</button>
+        <button className="bubble" onClick={LangFilterHind}>Hindi</button>
       </div>
 
       <div className="cards-container-parent">

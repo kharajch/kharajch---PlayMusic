@@ -47,7 +47,6 @@ const ExploreArtist = () => {
     <div className="content-container">
       <div className="content-header">
         <input type="text" className="searchbar" placeholder={"🔍 Search Songs"} value={searchval} onChange={SearchFilter} />
-        <img src="/profile-pic/kharaj2.jpg" className="profile-pic" />
       </div>
       <div className="buuble-container">
         <button className="bubble" onClick={()=>{LangFilter(); GenreFilter(); SingerFilter()}}>All</button>
