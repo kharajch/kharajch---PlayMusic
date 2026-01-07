@@ -16,10 +16,10 @@ const ExploreGenre = () => {
     console.log(e.target.value)
     var searchresults
     if (e.target.value != "") {
-      searchresults = document.querySelectorAll(`[nme*=${e.target.value}]`);
+      searchresults = document.querySelectorAll(`[name*=${e.target.value}]`);
     }
     else{
-      searchresults = document.querySelectorAll(`[nme*=""]`);
+      searchresults = document.querySelectorAll(`[name*=""]`);
     }
 
     const allcards = document.querySelectorAll(".projects_card")
@@ -43,7 +43,7 @@ const ExploreGenre = () => {
   return (
     <div className="content-container">
       <div className="content-header">
-        <input type="text" className="searchbar" placeholder={"🔍 Search Songs, Artists"} value={searchval} onChange={SearchFilter} />
+        <input type="text" className="searchbar" placeholder={"🔍 Search Songs"} value={searchval} onChange={SearchFilter} />
         <img src="/profile-pic/kharaj2.jpg" className="profile-pic" />
       </div>
       <div className="buuble-container">

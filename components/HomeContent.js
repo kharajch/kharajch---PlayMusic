@@ -17,10 +17,10 @@ const Content = () => {
     console.log(e.target.value)
     var searchresults
     if (e.target.value != "") {
-      searchresults = document.querySelectorAll(`[nme*=${e.target.value}]`);
+      searchresults = document.querySelectorAll(`[name*=${e.target.value}]`);
     }
     else{
-      searchresults = document.querySelectorAll(`[nme*=""]`);
+      searchresults = document.querySelectorAll(`[name*=""]`);
     }
 
     const allcards = document.querySelectorAll(".projects_card")
@@ -44,7 +44,7 @@ const Content = () => {
   return (
     <div className="content-container">
       <div className="content-header">
-        <input type="text" className="searchbar" placeholder={"🔍 Search Songs, Artists"} value={searchval} onChange={SearchFilter} />
+        <input type="text" className="searchbar" placeholder={"🔍 Search Songs"} value={searchval} onChange={SearchFilter} />
        <a href="https://github.com/kharajch"> <img src="/profile-pic/kharaj.jpg" className="profile-pic" /></a>
        <h2 className="username"><a href="https://github.com/kharajch">kharajch</a></h2>
       </div>
