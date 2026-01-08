@@ -132,18 +132,23 @@
     width: 25px;
 }
 
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width : 420px) {
     .cards-container-parent {
         top: 250px;
     }
 }
-@media only screen and (max-width : 210px) {
+@media only screen and (max-width : 215px) {
     .cards-container-parent {
         top: 300px;
     }
 }
-@media only screen and (max-width : 185px) {
+@media only screen and (max-width : 205px) {
     .cards-container-parent {
         top: 350px;
+    }
+}
+@media only screen and (max-width : 185px) {
+    .cards-container-parent {
+        top: 400px;
     }
 }

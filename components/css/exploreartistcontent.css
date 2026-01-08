@@ -3,34 +3,14 @@
 .searchbar {
     border: 2px solid var(--secondery_color);
     border-radius: 8px;
-    padding-right: 150px;
-    padding-bottom: 7.5px;
-    padding-top: 7.5px;
+    padding: 7.5px min(150px, 22vw) 7.5px 15px;
+    /* TOP RIGHT BOTTOM LEFT */
     position: absolute;
-    padding-left: 15px;
     top: 25px;
     left: 25vw;
 }
 
 .searchbar:hover {
-    box-shadow: 5px 5px 30px var(--secondery_color);
-    transition-property: box-shadow;
-    transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.profile-pic {
-    border: 5px solid var(--secondery_color);
-    border-radius: 50%;
-    width: 50px;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    cursor: pointer;
-}
-
-.profile-pic:hover {
-    cursor: pointer;
     box-shadow: 5px 5px 30px var(--secondery_color);
     transition-property: box-shadow;
     transition-duration: 0.5s;
@@ -68,19 +48,6 @@
 
 /* Cards */
 
-@keyframes appear {
-    from {
-        transform: translateX(100%);
-        filter: blur(100px);
-    }
-
-    to {
-        transform: translateX(0%);
-        filter: blur(0px);
-
-    }
-
-}
 
 .cards-container-parent {
     position: absolute;
@@ -163,4 +130,45 @@
 
 .card_btn button img {
     width: 25px;
+}
+
+@media only screen and (max-width : 1155px) {
+    .cards-container-parent {
+        top: 250px;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .cards-container-parent {
+        top: 300px;
+    }
+}
+@media only screen and (max-width : 410px) {
+    .cards-container-parent {
+        top: 350px;
+    }
+}
+@media only screen and (max-width : 382px) {
+    .cards-container-parent {
+        top: 420px;
+    }
+}
+@media only screen and (max-width : 343px) {
+    .cards-container-parent {
+        top: 490px;
+    }
+}
+@media only screen and (max-width : 218px) {
+    .cards-container-parent {
+        top: 570px;
+    }
+}
+@media only screen and (max-width : 196px) {
+    .cards-container-parent {
+        top: 675px;
+    }
+}
+@media only screen and (max-width : 153px) {
+    .cards-container-parent {
+        top: 755px;
+    }
 }

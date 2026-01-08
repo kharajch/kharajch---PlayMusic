@@ -1,5 +1,5 @@
 "use client"
-import "@/components/css/homecontent.css"
+import "@/components/css/exploregenrecontent.css"
 import Card from "./components/Card"
 import { music } from "./components/music-data"
 import { GenreFilter, GenreFilterRomantic, GenreFilterEnergetic, GenreFilterSad } from "./filters/GenreFilter"
