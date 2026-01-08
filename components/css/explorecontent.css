@@ -1,17 +1,17 @@
 .explore-cards-container {
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
     justify-content: center;
-    right: 0px;
+    left: 21vw;
 }
 
 .explore-card {
     user-select: text;
-    margin: 15px;
+    margin: 25px;
     border: 2px solid var(--secondery_color);
     display: inline-block;
-    width: 380px;
+    width: 400px;
     height: 600px;
 }
 

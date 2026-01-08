@@ -49,12 +49,6 @@ const Content = () => {
       </div>
       <div className="buuble-container">
         <button className="bubble" onClick={() => { LangFilter(); GenreFilter(); SingerFilter(); }}>All</button>
-        <button className="bubble" onClick={SingerFilterArijitSingh}>Arijit Singh</button>
-        <button className="bubble" onClick={GenreFilterEnergetic}>Energetic</button>
-        <button className="bubble" onClick={LangFilterBeng}>Bengali</button>
-        <button className="bubble" onClick={GenreFilterRomantic}>Romantic</button>
-        <button className="bubble" onClick={SingerFilterShreyaGhoshal}>Shreya Ghoshal</button>
-        <button className="bubble" onClick={LangFilterHind}>Hindi</button>
       </div>
 
       <div className="cards-container-parent">
