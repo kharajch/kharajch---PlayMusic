@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "kharajch--PlayMusic",
   description: "Music Player Created -- By Kharaj Chakraborty (kharajch)",
+  viewport : "width=device-width, initial-scale=1.0"
 };
 
 export default function RootLayout({ children }) {
