@@ -13,10 +13,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata = {
   title: "kharajch--PlayMusic",
   description: "Music Player Created -- By Kharaj Chakraborty (kharajch)",
-  viewport : "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 };
 
 export default function RootLayout({ children }) {
