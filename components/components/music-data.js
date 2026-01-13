@@ -27,9 +27,30 @@ export const music = [{
   genre : "Romantic"
 },
 {
-  img: "Is This Love.jpg",
+  img: "music.png",
   singer: "Mohit Chauhan, Shreya Ghoshal",
   name: `Is This Love`,
+  lang : "Hindi",
+  genre : "Romantic"
+},
+{
+  img: "music.png",
+  singer: "Arijit Singh",
+  name: `Hey Shokha`,
+  lang : "Bengali",
+  genre : "Romantic"
+},
+{
+  img: "music.png",
+  singer: "Arijit Singh",
+  name: `Milne Hai Mujhse Aayi`,
+  lang : "Hindi",
+  genre : "Sad"
+},
+{
+  img: "music.png",
+  singer: "Arijit Singh",
+  name: `Suno na Sangemarmar`,
   lang : "Hindi",
   genre : "Romantic"
 },

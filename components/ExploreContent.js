@@ -11,7 +11,7 @@ const ExploreContent = () => {
             <img src={`/explore/language.png`} alt={"Language"} />
             <br />
             <h3>🎶 Discover music without borders!</h3>
-            <p>Dive into songs from around the world and explore the rich diversity of sound through language. Whether you’re curious about Latin rhythms, Hindi melodies, French ballads, or Korean pop, this space lets you connect with cultures through their voices and lyrics. Find new favorites, celebrate global artistry, and let language guide your musical journey.</p>
+            <p>Dive into languages from across the world and explore the rich diversity of sound through voices. Whether you’re drawn to Latin rhythms, Hindi melodies, French ballads, or Korean pop, this space lets you connect with cultures through their lyrics and emotion. Discover new favorites, celebrate artistry, and let language guide your journey forward.</p>
             <div className="explore-card-btn">
               <Link href={"/Explore/Language"}><button >Explore Languages</button></Link>
             </div>
