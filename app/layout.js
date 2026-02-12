@@ -22,7 +22,7 @@ export const viewport = {
 
 export const metadata = {
   title: "kharajch--PlayMusic",
-  description: "Music Player Created -- By Kharaj Chakraborty (kharajch)",
+  description: "Music Player Created -- By Kharaj Chakraborty (@kharajch)",
 };
 
 export default function RootLayout({ children }) {
