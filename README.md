@@ -1,4 +1,4 @@
-# PlayMusic 🎵
+# kharajch---PlayMusic 🎵
 
 A modern, full-featured music player and discovery web application built with Next.js and React. Browse, search, and play songs with advanced filtering capabilities by language, genre, and artist.
 
@@ -149,7 +149,6 @@ Navigate through different discovery paths:
 - ⏯️ **Play/Pause** - Toggle audio playback
 - ⏭️ **Next** - Skip to the next song
 - ⏮️ **Previous** - Go back to the previous song
-- 🔊 **Volume** - Available in the playbar
 
 ## Music Library
 
@@ -172,7 +171,7 @@ Across various genres:
 
 - **Dark Theme**: Eye-friendly dark interface with vibrant accents
 - **Color Scheme**:
-  - Primary: Red/Orange accent colors
+  - Primary: Red accent color
   - Background: Deep black
   - Text: White for readability
 - **Typography**: Google Fonts (Geist family) for modern appearance
@@ -207,7 +206,7 @@ Potential features for future versions:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is not licensed yet.
 
 ## Author
 
